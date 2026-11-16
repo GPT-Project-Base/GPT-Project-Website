@@ -15,8 +15,24 @@ export default function Navbar() {
     const pathname = usePathname();
 
     return (
-        <nav className= "bg-[#5C4B34] text- [#D4CBB1]">
-            
+        <nav className= "sticky top-0 bg-[#5C4B34] text-[#D4CBB1] shadow-md px-6 py-6">
+            <div className="max-w-7xl mx-auto flex items-center justify-between">
+                <span className="text-3xl font-bold">GPT Project</span>
+                <div className="flex items-center gap-1">
+                    {links.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={`px-5 py-2 rounded-md text-xl font-medium ${
+                                pathname === link.href
+                                    ? "text-[#D4CBB1] hover:bg-[#D4CBB1] hover:text-[#5C4B34]"
+                                    : "text-[#D4CBB1] hover:bg-[#D4CBB1] hover:text-[#5C4B34]"
+                            }`}>
+                            {link.label}
+                        </Link>
+                    ))}
+                </div>
+            </div>
         </nav>
     )
 }
