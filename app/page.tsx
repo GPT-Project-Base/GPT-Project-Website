@@ -3,7 +3,7 @@ import Image from "next/image";
 /* This is the home page! */
 export default function Home() {
   return (
-    <div className="bg-[#D4CBB1] min-h-screen">
+    <div className="bg-[#D4CBB1]">
 
       <div className="flex flex-col text-center">
         <h1 className="pt-30 text-5xl font-bold text-center text-black">
@@ -14,27 +14,31 @@ export default function Home() {
         </p>
       </div>
       
-      <div className="flex flex-row grid grid-rows-3 grid-cols-2 justify-around justify-content mt-30">
+      <div className="flex flex-row grid grid-cols-2 justify-around justify-content pt-30">
         <div className="text-center max-w-sm mx-auto">
-          <h2 className="text-3xl font-bold pb-4">Create Your Own Society</h2>
+          <h2 className="text-3xl font-bold py-4">Create Your Own Society</h2>
           <p>Design populations of simulated individuals with each having their own different interests, opinions, and behavioral traits</p>
         </div>
-
-        <div className="justify-around items-center mt-30">
-          <div className="text-center max-w-sm mx-auto">
-            <h2 className="text-3xl font-bold pb-4">Watch It Evolve</h2>
-            <p>Visualize how interactions happen between individuals and observe how behaviors and opinions evolve through a simulation.</p>
-          </div>
-        </div>
-
-        <div className="justify-around mt-30">
-          <div className="text-center max-w-sm mx-auto">
-            <h2 className="text-3xl font-bold pb-4">Analyze the Results</h2>
-            <p>Explore emerging patterns in behaviors and opinions, compare outcomes, and investigate the different variables that influence your simulated population.</p>
-          </div>
-        </div>
-
       </div>
+
+      <div className="flex flex-row grid grid-cols-2 justify-around justify-end py-30">
+        <div>
+          {/* placeholder for an image */}
+          <p>placeholder</p>
+        </div>
+        <div className="text-center max-w-sm mx-auto">
+          <h2 className="text-3xl font-bold py-4">Watch It Evolve</h2>
+          <p>Visualize how interactions happen between individuals and observe how behaviors and opinions evolve through a simulation.</p>
+        </div>
+      </div>
+
+      <div className="flex flex-row grid grid-cols-2 justify-around justify-content pb-30">
+        <div className="text-center max-w-sm mx-auto">
+          <h2 className="text-3xl font-bold py-4">Analyze the Results</h2>
+          <p>Explore emerging patterns in behaviors and opinions, compare outcomes, and investigate the different variables that influence your simulated population.</p>
+        </div>
+      </div>
+
     </div>
   )
 }
