@@ -3,7 +3,7 @@ import Image from "next/image";
 /* This is the home page! */
 export default function Home() {
   return (
-    <div className="bg-[#D4CBB1]">
+    <div className="bg-[#D4CBB1] min-h-screen">
 
       <div className="flex flex-col text-center">
         <h1 className="pt-30 text-5xl font-bold text-center text-black">
@@ -24,7 +24,7 @@ export default function Home() {
       <div className="flex flex-row grid grid-cols-2 justify-around justify-end py-30">
         <div>
           {/* placeholder for an image */}
-          <p>placeholder</p>
+          <p className="text-center">placeholder</p>
         </div>
         <div className="text-center max-w-sm mx-auto">
           <h2 className="text-3xl font-bold py-4">Watch It Evolve</h2>
